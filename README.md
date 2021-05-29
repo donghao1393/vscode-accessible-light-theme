@@ -1,13 +1,31 @@
-# README
-## This is the README for your extension "atom-one-x-github---light-gray"
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# Atom One X Github - Light Gray Theme
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+Combination of two popular light themes.
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Credits to [vscode-theme-onelight](https://github.com/akamud/vscode-theme-onelight) for base color theme and [vscode-theme-github-light](https://github.com/yunlingz/vscode-theme-github-light) for token/syntax color theme.
 
-**Enjoy!**
+![license: MIT](https://img.shields.io/badge/license-MIT-A31F34)
+[![](https://img.shields.io/github/stars/softtama/atom-one-x-github---light-gray?style=social)](https://github.com/softtama/atom-one-x-github---light-gray/stargazers)
+
+* [GitHub repository](https://github.com/softtama/atom-one-x-github---light-gray.git)
+* [Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=softtama.atom-one-x-github---light-gray)
+
+## Preview
+
+![gray background](./preview/vscode-prev-1.png)
+
+## Tips
+
+Use Cascadia Code font family and set tab size to 2 to experience the theme better.
+
+```json
+{
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Cascadia Code",
+  "editor.tabSize": 2,
+}
+```
+
+## License
+
+[MIT License](LICENSE-MIT)
