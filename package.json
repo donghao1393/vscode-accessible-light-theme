@@ -1,5 +1,5 @@
 {
-  "name": "atom-one-x-github---light-gray",
+  "name": "vscode-theme-atom-one-x-github-light-gray",
   "displayName": "Atom One X Github - Light Gray",
   "description": "Combination of two popular light themes.",
   "publisher": "softtama",
@@ -26,7 +26,7 @@
     ]
   },
   "repository": {
-    "url": "https://github.com/softtama/atom-one-x-github---light-gray.git",
+    "url": "https://github.com/softtama/vscode-theme-atom-one-x-github-light-gray.git",
     "type": "git"
   }
 }

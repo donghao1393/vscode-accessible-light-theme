@@ -5,10 +5,10 @@ Combination of two popular light themes.
 Credits to [vscode-theme-github-light](https://github.com/yunlingz/vscode-theme-github-light) for base color theme and [vscode-theme-onelight](https://github.com/akamud/vscode-theme-onelight) for token/syntax color theme.
 
 ![license: MIT](https://img.shields.io/badge/license-MIT-A31F34)
-[![](https://img.shields.io/github/stars/softtama/atom-one-x-github---light-gray?style=social)](https://github.com/softtama/atom-one-x-github---light-gray/stargazers)
+[![](https://img.shields.io/github/stars/softtama/vscode-theme-atom-one-x-github-light-gray?style=social)](https://github.com/softtama/vscode-theme-atom-one-x-github-light-gray/stargazers)
 
-* [GitHub repository](https://github.com/softtama/atom-one-x-github---light-gray.git)
-* [Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=softtama.atom-one-x-github---light-gray)
+* [GitHub repository](https://github.com/softtama/vscode-theme-atom-one-x-github-light-gray.git)
+* [Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=softtama.vscode-theme-atom-one-x-github-light-gray)
 
 ## Preview
 
