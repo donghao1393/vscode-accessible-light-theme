@@ -2,6 +2,7 @@
   "name": "atom-one-x-github---light-gray",
   "displayName": "Atom One X Github - Light Gray",
   "description": "Combination of two popular light themes.",
+  "publisher": "softtama",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.56.0"
