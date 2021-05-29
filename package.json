@@ -1,0 +1,26 @@
+{
+  "name": "atom-one-x-github---light-gray",
+  "displayName": "Atom One X Github - Light Gray",
+  "description": "Combination of two popular light themes.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.56.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Atom One X Github - Light Gray",
+        "uiTheme": "vs",
+        "path": "./themes/Atom One X Github - Light Gray-color-theme.json"
+      }
+    ]
+  },
+  "author": {
+    "name": "Rizki Pratama",
+    "email": "softtama@outlook.co.id",
+    "url": "https://id.linkedin.com/in/softtama"
+  }
+}
