@@ -7,6 +7,12 @@
   "engines": {
     "vscode": "^1.56.0"
   },
+  "icon": "icons/vscode-theme-icon.png",
+  "author": {
+    "name": "Rizki Pratama",
+    "email": "softtama@outlook.co.id",
+    "url": "https://id.linkedin.com/in/softtama"
+  },
   "categories": [
     "Themes"
   ],
@@ -22,10 +28,5 @@
   "repository": {
     "url": "https://github.com/softtama/atom-one-x-github---light-gray.git",
     "type": "git"
-  },
-  "author": {
-    "name": "Rizki Pratama",
-    "email": "softtama@outlook.co.id",
-    "url": "https://id.linkedin.com/in/softtama"
   }
 }
