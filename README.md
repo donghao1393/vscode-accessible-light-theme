@@ -2,7 +2,7 @@
 
 Combination of two popular light themes.
 
-Credits to [vscode-theme-onelight](https://github.com/akamud/vscode-theme-onelight) for base color theme and [vscode-theme-github-light](https://github.com/yunlingz/vscode-theme-github-light) for token/syntax color theme.
+Credits to [vscode-theme-github-light](https://github.com/yunlingz/vscode-theme-github-light) for base color theme and [vscode-theme-onelight](https://github.com/akamud/vscode-theme-onelight) for token/syntax color theme.
 
 ![license: MIT](https://img.shields.io/badge/license-MIT-A31F34)
 [![](https://img.shields.io/github/stars/softtama/atom-one-x-github---light-gray?style=social)](https://github.com/softtama/atom-one-x-github---light-gray/stargazers)
