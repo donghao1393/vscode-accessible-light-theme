@@ -19,6 +19,10 @@
       }
     ]
   },
+  "repository": {
+    "url": "https://github.com/softtama/atom-one-x-github---light-gray.git",
+    "type": "git"
+  },
   "author": {
     "name": "Rizki Pratama",
     "email": "softtama@outlook.co.id",
