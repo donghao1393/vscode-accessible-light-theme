@@ -19,7 +19,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "Atom One X Github - Light Gray",
+        "label": "Atom One X Github - Light Gray Enhanced",
         "uiTheme": "vs",
         "path": "./themes/atom-one-x-github-light-gray-color-theme.json"
       }
