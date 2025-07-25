@@ -2,6 +2,10 @@
 
 A carefully crafted light theme optimized for accessibility, color-blind users, and projector/presentation scenarios.
 
+## 🎯 Live Preview
+
+[🌐 View Interactive Preview](./preview.html) | [📱 GitHub Preview](https://htmlpreview.github.io/?https://github.com/donghao1393/vscode-accessible-light-theme/blob/master/preview.html)
+
 ## 🎯 Quick Preview
 
 **Enhanced syntax highlighting with accessibility in mind:**
