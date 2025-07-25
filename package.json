@@ -1,9 +1,9 @@
 {
-  "name": "vscode-theme-atom-one-x-github-light-gray",
-  "displayName": "Atom One X Github - Light Gray",
-  "description": "Combination of two popular light themes.",
-  "publisher": "softtama",
-  "version": "0.0.4",
+  "name": "vscode-accessible-light-theme",
+  "displayName": "Accessible Light",
+  "description": "A light theme optimized for accessibility, color-blind friendly, and projector use. Enhanced red-green contrast and visibility.",
+  "publisher": "donghao1393",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.56.0"
   },
@@ -19,14 +19,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Atom One X Github - Light Gray Enhanced",
+        "label": "Accessible Light",
         "uiTheme": "vs",
-        "path": "./themes/atom-one-x-github-light-gray-color-theme.json"
+        "path": "./themes/accessible-light-theme.json"
       }
     ]
   },
   "repository": {
-    "url": "https://github.com/softtama/vscode-theme-atom-one-x-github-light-gray.git",
+    "url": "https://github.com/donghao1393/vscode-accessible-light-theme.git",
     "type": "git"
   }
 }

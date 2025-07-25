@@ -1,5 +1,5 @@
 {
-	"name": "Atom One X Github - Light Gray Enhanced",
+	"name": "Accessible Light",
   "$schema": "vscode://schemas/color-theme",
   "type": "light",
   "colors": {
@@ -68,7 +68,54 @@
     "titleBar.activeForeground": "#2c2c2c",
     "titleBar.border": "#e0e0e0",
     "titleBar.inactiveBackground": "#f5f5f5",
-    "titleBar.inactiveForeground": "#6c6c6c"
+    "titleBar.inactiveForeground": "#6c6c6c",
+    
+    // Terminal colors for better integration
+    "terminal.ansiRed": "#dc2626",
+    "terminal.ansiGreen": "#059669",
+    "terminal.ansiBrightRed": "#b91c1c",
+    "terminal.ansiBrightGreen": "#047857",
+    "terminal.ansiYellow": "#d97706",
+    "terminal.ansiBlue": "#2563eb",
+    "terminal.foreground": "#1a1a1a",
+    "terminal.background": "#fdfdfd",
+    
+    // Git and diff colors
+    "diffEditor.insertedTextBackground": "#05966920",
+    "diffEditor.removedTextBackground": "#dc262620",
+    "gitDecoration.addedResourceForeground": "#059669",
+    "gitDecoration.deletedResourceForeground": "#dc2626",
+    "gitDecoration.modifiedResourceForeground": "#d97706",
+    "gitDecoration.untrackedResourceForeground": "#2563eb",
+    
+    // Error and warning hierarchy
+    "errorForeground": "#dc2626",
+    "warningForeground": "#d97706",
+    "infoForeground": "#2563eb",
+    
+    // Bracket matching enhancement
+    "editorBracketMatch.background": "#dc262620",
+    "editorBracketMatch.border": "#dc2626",
+    
+    // Search highlighting
+    "editor.findMatchBackground": "#ffd54088",
+    "editor.findMatchHighlightBackground": "#ffd54060",
+    
+    // Status bar for different states
+    "statusBar.debuggingBackground": "#d97706",
+    "statusBar.debuggingForeground": "#ffffff",
+    
+    // Cursor and selection enhancement
+    "editorCursor.foreground": "#dc2626",
+    "editor.selectionHighlightBackground": "#dc262615",
+    
+    // Built-in bracket pair colorization
+    "editorBracketHighlight.foreground1": "#dc2626",
+    "editorBracketHighlight.foreground2": "#059669",
+    "editorBracketHighlight.foreground3": "#d97706",
+    "editorBracketHighlight.foreground4": "#2563eb",
+    "editorBracketHighlight.foreground5": "#7c2d92",
+    "editorBracketHighlight.foreground6": "#0891b2"
     //"activityBar.activeBorder": "#000000",
     //"activityBar.dropBorder": "#000000",
     //"activityBar.inactiveForeground": "#00000066",
