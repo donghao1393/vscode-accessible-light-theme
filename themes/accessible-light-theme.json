@@ -70,16 +70,41 @@
     "titleBar.inactiveBackground": "#f5f5f5",
     "titleBar.inactiveForeground": "#6c6c6c",
     
-    // Terminal colors for better integration
-    "terminal.ansiRed": "#dc2626",
-    "terminal.ansiGreen": "#047857",
-    "terminal.ansiBrightRed": "#b91c1c",
-    "terminal.ansiBrightGreen": "#047857",
-    "terminal.ansiYellow": "#c2410c",
-    "terminal.ansiBlue": "#2563eb",
+    // Terminal colors for better integration and accessibility
     "terminal.foreground": "#1a1a1a",
     "terminal.background": "#fdfdfd",
-    
+    "terminal.selectionBackground": "#ffd54088",
+    "terminal.border": "#e0e0e0",
+
+    // ANSI Colors - optimized for accessibility
+    "terminal.ansiBlack": "#1f2937",
+    "terminal.ansiRed": "#dc2626",
+    "terminal.ansiGreen": "#047857",
+    "terminal.ansiYellow": "#c2410c",
+    "terminal.ansiBlue": "#2563eb",
+    "terminal.ansiMagenta": "#7c2d92",
+    "terminal.ansiCyan": "#0e7490",
+    "terminal.ansiWhite": "#6b7280",
+
+    // Bright ANSI Colors - higher contrast versions
+    "terminal.ansiBrightBlack": "#374151",
+    "terminal.ansiBrightRed": "#b91c1c",
+    "terminal.ansiBrightGreen": "#047857",
+    "terminal.ansiBrightYellow": "#a16207",
+    "terminal.ansiBrightBlue": "#1d4ed8",
+    "terminal.ansiBrightMagenta": "#6b21a8",
+    "terminal.ansiBrightCyan": "#0e7490",
+    "terminal.ansiBrightWhite": "#1a1a1a",
+
+    // Terminal cursor and interaction colors
+    "terminalCursor.foreground": "#dc2626",
+    "terminalCursor.background": "#fdfdfd",
+    "terminal.selectionForeground": "#1a1a1a",
+    "terminal.inactiveSelectionBackground": "#e5e7eb",
+    "terminal.findMatchBackground": "#ffd54088",
+    "terminal.findMatchHighlightBackground": "#ffd54060",
+    "terminal.hoverHighlightBackground": "#f3f4f6",
+
     // Git and diff colors
     "diffEditor.insertedTextBackground": "#04785720",
     "diffEditor.removedTextBackground": "#dc262620",
