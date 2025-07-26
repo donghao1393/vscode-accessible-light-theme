@@ -7,7 +7,7 @@
   "engines": {
     "vscode": "^1.56.0"
   },
-  "icon": "icons/vscode-theme-icon.png",
+  "icon": "icons/accessible-light-icon.png",
   "author": {
     "name": "Dong Hao",
     "email": "dong_hao@vip.qq.com",
