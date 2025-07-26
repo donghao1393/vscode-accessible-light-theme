@@ -1,7 +1,7 @@
 {
   "name": "vscode-accessible-light-theme",
   "displayName": "Accessible Light",
-  "description": "A light theme optimized for accessibility, color-blind friendly, and projector use. Enhanced red-green contrast and visibility.",
+  "description": "A WCAG AA compliant light theme optimized for accessibility, color-blind friendly, and projector use. Features enhanced contrast ratios and font style differentiation.",
   "publisher": "donghao1393",
   "version": "1.0.0",
   "engines": {
@@ -9,12 +9,29 @@
   },
   "icon": "icons/vscode-theme-icon.png",
   "author": {
-    "name": "Rizki Pratama",
-    "email": "softtama@outlook.co.id",
-    "url": "https://id.linkedin.com/in/softtama"
+    "name": "Dong Hao",
+    "email": "dong_hao@vip.qq.com",
+    "url": "https://github.com/donghao1393"
   },
+  "contributors": [
+    {
+      "name": "Rizki Pratama",
+      "email": "softtama@outlook.co.id",
+      "url": "https://id.linkedin.com/in/softtama"
+    }
+  ],
   "categories": [
     "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "light",
+    "accessibility",
+    "wcag",
+    "color-blind",
+    "high-contrast",
+    "projector",
+    "presentation"
   ],
   "contributes": {
     "themes": [

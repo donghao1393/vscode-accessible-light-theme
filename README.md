@@ -32,31 +32,32 @@ return (
 };
 ```
 
-**Color Palette:**
+**Color Palette (WCAG AA Compliant):**
 
 - 🔴 **Red (#dc2626)** → Keywords (import, const, interface), HTML tags, errors
-- 🟢 **Green (#059669)** → Strings, success states, added lines in diff
-- 🟠 **Orange (#d97706)** → Numbers, types, constants, changed files
+- 🟢 **Green (#047857)** → Strings, success states, added lines in diff
+- 🟠 **Orange (#c2410c)** → Numbers, types, constants, changed files
 - 🔵 **Blue (#2563eb)** → Functions, methods, links
-- ⚫ **Gray (#7c7c7c)** → Comments, disabled text
+- ⚫ **Gray (#6b7280)** → Comments, disabled text
 
 ## ✨ Features
 
-- **🎯 High Contrast**: Enhanced red-green contrast for better readability
-- **♿ Accessibility Focused**: Color-blind friendly design with multiple visual cues
+- **🎯 WCAG AA Compliant**: All colors meet 4.5:1 contrast ratio requirements
+- **♿ Accessibility Focused**: Color-blind friendly design with font style cues
 - **📽️ Projector Optimized**: Clear visibility in presentation environments
 - **🔍 Enhanced Borders**: Visible UI boundaries for better structure comprehension
 - **🌈 Semantic Colors**: Meaningful color usage across syntax highlighting
+- **🎨 Font Style Differentiation**: Bold, italic, and underline styles for better element distinction
 
 ## 🎨 Color Palette
 
-| Color | Hex Code | Usage |
-|-------|----------|-------|
-| 🔴 Red | `#dc2626` | Keywords, errors, important elements |
-| 🟢 Green | `#059669` | Strings, success states, insertions |
-| 🟠 Orange | `#d97706` | Numbers, constants, types |
-| 🔵 Blue | `#2563eb` | Functions, links, methods |
-| ⚫ Gray | `#7c7c7c` | Comments, secondary information |
+| Color | Hex Code | Contrast Ratio | Usage |
+|-------|----------|----------------|-------|
+| 🔴 Red | `#dc2626` | 4.75:1 | Keywords, errors, important elements |
+| 🟢 Green | `#047857` | 5.39:1 | Strings, success states, insertions |
+| 🟠 Orange | `#c2410c` | 5.09:1 | Numbers, constants, types |
+| 🔵 Blue | `#2563eb` | 5.08:1 | Functions, links, methods |
+| ⚫ Gray | `#6b7280` | 4.75:1 | Comments, secondary information |
 
 ## 🚀 Enhanced Features
 
@@ -78,6 +79,40 @@ Enhanced diff view and git decoration colors for clearer version control visuali
 
 ### Error Hierarchy
 Clear distinction between errors, warnings, and information with appropriate color coding.
+
+## ♿ Accessibility Guide
+
+### WCAG Compliance
+This theme is designed to meet **WCAG 2.1 AA standards**:
+- All text colors have a contrast ratio of at least 4.5:1 against the background
+- Color is not the only means of conveying information
+- Font styles provide additional visual cues for different syntax elements
+
+### For Color-Blind Users
+The theme includes multiple accessibility features:
+
+**Font Style Indicators:**
+- **Bold**: Keywords, functions, numbers, constants
+- **Italic**: Comments, strings, variables, attributes
+- **Underline**: Type definitions and class names
+
+**High Contrast Colors:**
+- All colors have been tested and optimized for different types of color vision deficiency
+- Even if colors appear similar, font styles help distinguish syntax elements
+
+### Recommended VS Code Settings
+For the best accessibility experience, add these settings to your VS Code configuration:
+
+```json
+{
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [80, 120],
+  "accessibility.signals.lineHasError.sound": "on",
+  "accessibility.signals.lineHasWarning.sound": "on"
+}
+```
 
 ## 📦 Installation
 
@@ -111,6 +146,33 @@ Clear distinction between errors, warnings, and information with appropriate col
 - **Error Lens**: Inline error display
 - **Todo Highlight**: Highlight TODO comments
 - **GitLens**: Enhanced Git capabilities
+
+## 🧪 Testing & Development
+
+This theme includes comprehensive accessibility testing tools:
+
+```bash
+# Run all accessibility tests
+make test
+
+# Quick contrast ratio check
+make test-contrast
+
+# Color-blind simulation test
+make test-colorblind
+
+# Check specific color pair
+make check-color COLOR1=#dc2626 COLOR2=#fdfdfd
+```
+
+### Test Results
+All colors in this theme have been verified to meet WCAG AA standards:
+- ✅ Main text: 17.11:1 contrast ratio
+- ✅ Keywords: 4.75:1 contrast ratio
+- ✅ Strings: 5.39:1 contrast ratio
+- ✅ Numbers: 5.09:1 contrast ratio
+- ✅ Functions: 5.08:1 contrast ratio
+- ✅ Comments: 4.75:1 contrast ratio
 
 ## 🔧 Customization
 
