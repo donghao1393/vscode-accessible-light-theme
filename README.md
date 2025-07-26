@@ -100,8 +100,8 @@ To get the most out of this theme, you can add some settings to VS Code:
 | Comments | 4.75:1 | ✅ Pass |
 
 **Want to verify yourself?**
-- Run: `python3 test_theme.py` in the theme folder
-- Or use: `make test` if you have make installed
+- Run: `just test` (modern Rust-based task runner)
+- Or: `uv run pytest tests/` (direct pytest command)
 
 ## 🔧 Advanced Customization
 

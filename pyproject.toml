@@ -1,0 +1,33 @@
+[project]
+name = "accessible-light-theme-tests"
+version = "1.1.0"
+description = "Accessibility tests for VS Code Accessible Light Theme"
+dependencies = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
+requires-python = ">=3.8"
+
+# No build system needed for test-only project
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "--verbose",
+]
+
+[tool.coverage.run]
+source = ["tests"]
+omit = ["tests/conftest.py"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+]
