@@ -14,7 +14,7 @@ This theme is different: **clean, simple, and actually pleasant to look at.**
 
 ## 🌟 Live Preview
 
-[🌐 View Interactive Preview](./assets/preview/preview.html) | [📱 GitHub Preview](https://htmlpreview.github.io/?https://github.com/donghao1393/vscode-accessible-light-theme/blob/master/assets/preview/preview.html)
+[🌐 **Try Interactive Preview**](https://htmlpreview.github.io/?https://github.com/donghao1393/vscode-accessible-light-theme/blob/master/assets/preview/preview.html)
 
 See exactly how your code will look before installing!
 

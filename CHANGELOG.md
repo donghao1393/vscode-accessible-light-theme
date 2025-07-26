@@ -1,43 +1,47 @@
 # Change Log
 
-All notable changes to the "vscode-accessible-light-theme" extension will be documented in this file.
+All notable changes to the "Clean Light Theme" extension will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.1.0] - 2025-01-26
+## [1.1.0] - 2025-07-26
 
 ### Added
-- **WCAG AA Compliance**: All colors now meet 4.5:1 contrast ratio requirements
-- **Enhanced Font Styles**: Added bold, italic, and underline styles for better syntax differentiation
-- **Comprehensive Testing Suite**:
-  - Automated contrast ratio checking
-  - Color-blind simulation testing
-  - Quick validation tools
-- **Build System**: Makefile with testing and build commands
-- **Accessibility Documentation**: Detailed usage guide for different visual conditions
+- **Modern Development Infrastructure**: Rust-based toolchain with Just + uv + pytest
+- **Professional Project Structure**: Organized assets into `assets/docs/`, `assets/icons/`, `assets/preview/`
+- **New Minimalist Icon**: Clean "A" design with theme accent color (SVG + PNG)
+- **Enhanced Testing**: 8 automated accessibility tests, all passing
+- **Interactive Preview**: Updated preview.html with accurate theme colors
 
 ### Changed
-- **Color Updates for Better Contrast**:
+- **Project Branding**: Repositioned from "Accessible Light Theme" to "Clean Light Theme"
+- **README Rewrite**: Developer-friendly messaging with honest, direct communication
+- **File Organization**: Moved all documentation and assets to organized subdirectories
+- **Build System**: Replaced broken Makefile with modern Just-based workflow
+
+### Fixed
+- **WCAG AA Compliance**: Fixed color contrast issues from v1.0.0
   - Green strings: `#059669` → `#047857` (contrast: 3.70 → 5.39)
   - Orange numbers/types: `#d97706` → `#c2410c` (contrast: 3.13 → 5.09)
   - Gray comments: `#7c7c7c` → `#6b7280` (contrast: 4.10 → 4.75)
-- **Enhanced Syntax Highlighting**:
-  - Type definitions now use underline style
-  - Constants and numbers use bold style
-  - Variables use italic style for better distinction
-- **Updated Documentation**: README with accessibility features and test results
+- **Color Accuracy**: Fixed all color mismatches between preview and actual theme
+- **JSON Validation**: Cleaned theme file, removed all comments and errors
+- **Documentation**: Updated all links and references to new file locations
 
-### Fixed
-- Color contrast issues that didn't meet accessibility standards
-- Insufficient visual cues for color-blind users
-
-## [1.0.0] - 2024-XX-XX
+## [1.0.0] - 2025-07-25
 
 ### Added
-- Initial release based on Atom One X Github Light Gray theme
-- Light theme optimized for accessibility and projector use
-- Enhanced red-green contrast
-- Built-in bracket pair colorization support
-- Terminal integration with consistent colors
-- Git integration with clear diff visualization
+- **Initial Accessible Light Theme**: Clean light theme with accessibility focus
+- **Enhanced Font Styles**: Bold, italic, and underline styles for better syntax differentiation
+- **Multi-language Support**: Syntax highlighting for JavaScript, Python, HTML, CSS, Markdown
+- **Terminal Integration**: Consistent color scheme in integrated terminal
+- **Git Integration**: Enhanced diff view and git decoration colors
+
+### Features
+- Light color scheme optimized for readability
+- Font style differentiation beyond just color
+- Support for major programming languages
+- Clean, minimal design approach
+
+

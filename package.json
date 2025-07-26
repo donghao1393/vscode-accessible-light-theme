@@ -3,7 +3,7 @@
   "displayName": "Accessible Light",
   "description": "A WCAG AA compliant light theme optimized for accessibility, color-blind friendly, and projector use. Features enhanced contrast ratios and font style differentiation.",
   "publisher": "donghao1393",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.56.0"
   },
