@@ -147,6 +147,28 @@ For the best accessibility experience, add these settings to your VS Code config
 - **Todo Highlight**: Highlight TODO comments
 - **GitLens**: Enhanced Git capabilities
 
+## ⚙️ Quick Setup
+
+### Installation
+```bash
+# Install from VSIX file
+code --install-extension accessible-light-theme-1.1.0.vsix
+```
+
+### Recommended Settings
+Copy the settings from `recommended-settings.json` to your VS Code settings, or use our quick setup:
+
+```json
+{
+  "editor.accessibilitySupport": "auto",
+  "editor.bracketPairColorization.enabled": true,
+  "terminal.integrated.minimumContrastRatio": 4.5,
+  "accessibility.signals.lineHasError.sound": "on"
+}
+```
+
+📖 **See [SETUP_GUIDE.md](SETUP_GUIDE.md) for detailed setup instructions**
+
 ## 🧪 Testing & Development
 
 This theme includes comprehensive accessibility testing tools:
@@ -173,6 +195,8 @@ All colors in this theme have been verified to meet WCAG AA standards:
 - ✅ Numbers: 5.09:1 contrast ratio
 - ✅ Functions: 5.08:1 contrast ratio
 - ✅ Comments: 4.75:1 contrast ratio
+- ✅ Terminal colors: All 16 ANSI colors meet standards
+- ✅ UI elements: Status bar, notifications, panels optimized
 
 ## 🔧 Customization
 

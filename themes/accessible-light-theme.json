@@ -127,8 +127,18 @@
     "editor.findMatchHighlightBackground": "#ffd54060",
     
     // Status bar for different states
-    "statusBar.debuggingBackground": "#d97706",
+    "statusBar.debuggingBackground": "#c2410c",
     "statusBar.debuggingForeground": "#ffffff",
+
+    // Problems panel and notifications
+    "problemsErrorIcon.foreground": "#dc2626",
+    "problemsWarningIcon.foreground": "#c2410c",
+    "problemsInfoIcon.foreground": "#2563eb",
+
+    // Notification improvements
+    "notificationsErrorIcon.foreground": "#dc2626",
+    "notificationsWarningIcon.foreground": "#c2410c",
+    "notificationsInfoIcon.foreground": "#2563eb",
     
     // Cursor and selection enhancement
     "editorCursor.foreground": "#dc2626",
