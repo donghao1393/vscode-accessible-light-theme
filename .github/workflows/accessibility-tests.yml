@@ -1,127 +1,84 @@
-name: Accessibility Tests
+name: Theme Quality Assurance
 
 on:
   push:
-    branches: [ master, main ]
+    branches: [ main ]
   pull_request:
-    branches: [ master, main ]
-  schedule:
-    # 每周运行一次测试
-    - cron: '0 0 * * 0'
+    branches: [ main ]
 
 jobs:
   accessibility-tests:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-      
-    - name: Set up Python
-      uses: actions/setup-python@v4
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v4
       with:
-        python-version: '3.x'
-        
+        version: "latest"
+
+    - name: Set up Python
+      run: uv python install 3.12
+
     - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        # 如果有requirements.txt，可以在这里安装
+      run: uv sync
         
+    - name: Install Just
+      uses: extractions/setup-just@v2
+
     - name: Validate theme JSON
-      run: |
-        echo "Validating theme JSON format..."
-        python -m json.tool themes/accessible-light-theme.json > /dev/null
-        echo "✅ Theme JSON is valid"
+      run: just validate
+
+    - name: Run accessibility tests
+      run: just test
+
+    - name: Quick contrast check
+      run: just quick-test
         
-    - name: Run contrast ratio tests
+    - name: Check for old color values
       run: |
-        echo "Running contrast ratio tests..."
-        python scripts/quick-contrast-check.py
-        
-    - name: Run full accessibility tests
-      run: |
-        echo "Running full accessibility test suite..."
-        python scripts/accessibility-test.py
-        
-    - name: Run color-blind simulation tests
-      run: |
-        echo "Running color-blind simulation tests..."
-        python scripts/colorblind-simulation.py
-        
-    - name: Generate color report
-      run: |
-        echo "Generating color usage report..."
-        make color-report
-        
-    - name: Check for common issues
-      run: |
-        echo "Checking for common accessibility issues..."
-        
-        # 检查是否有硬编码的颜色值需要更新
+        echo "Checking for outdated color values..."
         if grep -r "#059669\|#d97706\|#7c7c7c" themes/ --exclude="*.md"; then
-          echo "⚠️ Found old color values that may need updating"
+          echo "⚠️ Found old color values that need updating"
           exit 1
+        else
+          echo "✅ No outdated color values found"
         fi
-        
-        # 检查是否所有重要的scope都有fontStyle定义
-        echo "Checking font style coverage..."
-        python -c "
-import json
-with open('themes/accessible-light-theme.json', 'r') as f:
-    theme = json.load(f)
-
-important_scopes = ['comment', 'string', 'keyword', 'constant.numeric', 'entity.name.function']
-missing_styles = []
-
-for token in theme.get('tokenColors', []):
-    scope = token.get('scope', [])
-    if isinstance(scope, list):
-        scope = scope[0] if scope else ''
-    
-    if any(important in scope for important in important_scopes):
-        if 'fontStyle' not in token.get('settings', {}):
-            missing_styles.append(scope)
-
-if missing_styles:
-    print(f'⚠️ Missing font styles for: {missing_styles}')
-else:
-    print('✅ All important scopes have font styles')
-"
 
   build-test:
     runs-on: ubuntu-latest
     needs: accessibility-tests
-    
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-      
+
+    - name: Install Just
+      uses: extractions/setup-just@v2
+
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-        
+
     - name: Install vsce
       run: npm install -g vsce
-      
+
     - name: Build VSIX package
-      run: |
-        echo "Building VSIX package..."
-        vsce package --no-git-tag-version
-        
+      run: just build
+
     - name: Upload VSIX artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: vsix-package
         path: '*.vsix'
         retention-days: 30
-        
+
     - name: Validate package contents
       run: |
         echo "Validating package contents..."
-        # 解压VSIX文件检查内容
         unzip -l *.vsix
-        
-        # 检查必要文件是否存在
         unzip -t *.vsix
         echo "✅ VSIX package is valid"
