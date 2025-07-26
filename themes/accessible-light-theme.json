@@ -72,25 +72,25 @@
     
     // Terminal colors for better integration
     "terminal.ansiRed": "#dc2626",
-    "terminal.ansiGreen": "#059669",
+    "terminal.ansiGreen": "#047857",
     "terminal.ansiBrightRed": "#b91c1c",
     "terminal.ansiBrightGreen": "#047857",
-    "terminal.ansiYellow": "#d97706",
+    "terminal.ansiYellow": "#c2410c",
     "terminal.ansiBlue": "#2563eb",
     "terminal.foreground": "#1a1a1a",
     "terminal.background": "#fdfdfd",
     
     // Git and diff colors
-    "diffEditor.insertedTextBackground": "#05966920",
+    "diffEditor.insertedTextBackground": "#04785720",
     "diffEditor.removedTextBackground": "#dc262620",
-    "gitDecoration.addedResourceForeground": "#059669",
+    "gitDecoration.addedResourceForeground": "#047857",
     "gitDecoration.deletedResourceForeground": "#dc2626",
-    "gitDecoration.modifiedResourceForeground": "#d97706",
+    "gitDecoration.modifiedResourceForeground": "#c2410c",
     "gitDecoration.untrackedResourceForeground": "#2563eb",
     
     // Error and warning hierarchy
     "errorForeground": "#dc2626",
-    "warningForeground": "#d97706",
+    "warningForeground": "#c2410c",
     "infoForeground": "#2563eb",
     
     // Bracket matching enhancement
@@ -111,8 +111,8 @@
     
     // Built-in bracket pair colorization
     "editorBracketHighlight.foreground1": "#dc2626",
-    "editorBracketHighlight.foreground2": "#059669",
-    "editorBracketHighlight.foreground3": "#d97706",
+    "editorBracketHighlight.foreground2": "#047857",
+    "editorBracketHighlight.foreground3": "#c2410c",
     "editorBracketHighlight.foreground4": "#2563eb",
     "editorBracketHighlight.foreground5": "#7c2d92",
     "editorBracketHighlight.foreground6": "#0891b2"
@@ -591,26 +591,26 @@
     {
       "scope": ["comment"],
       "settings": {
-        "foreground": "#7c7c7c",
+        "foreground": "#6b7280",
         "fontStyle": "italic"
       }
     },
     {
       "scope": ["comment markup.link"],
       "settings": {
-        "foreground": "#7c7c7c"
+        "foreground": "#6b7280"
       }
     },
     {
       "scope": ["entity.name.type"],
       "settings": {
-        "foreground": "#d97706"
+        "foreground": "#c2410c"
       }
     },
     {
       "scope": ["entity.other.inherited-class"],
       "settings": {
-        "foreground": "#d97706"
+        "foreground": "#c2410c"
       }
     },
     {
@@ -642,7 +642,7 @@
     {
       "scope": ["keyword.other.unit"],
       "settings": {
-        "foreground": "#d97706"
+        "foreground": "#c2410c"
       }
     },
     {
@@ -667,38 +667,38 @@
     {
       "scope": ["constant"],
       "settings": {
-        "foreground": "#d97706"
+        "foreground": "#c2410c"
       }
     },
     {
       "scope": ["constant.variable"],
       "settings": {
-        "foreground": "#d97706"
+        "foreground": "#c2410c"
       }
     },
     {
       "scope": ["constant.character.escape"],
       "settings": {
-        "foreground": "#059669"
+        "foreground": "#047857"
       }
     },
     {
       "scope": ["constant.numeric"],
       "settings": {
-        "foreground": "#d97706",
+        "foreground": "#c2410c",
         "fontStyle": "bold"
       }
     },
     {
       "scope": ["constant.other.color"],
       "settings": {
-        "foreground": "#059669"
+        "foreground": "#047857"
       }
     },
     {
       "scope": ["constant.other.symbol"],
       "settings": {
-        "foreground": "#059669"
+        "foreground": "#047857"
       }
     },
     {
@@ -722,7 +722,7 @@
     {
       "scope": ["string"],
       "settings": {
-        "foreground": "#059669",
+        "foreground": "#047857",
         "fontStyle": "italic"
       }
     },
@@ -823,7 +823,7 @@
     {
       "scope": ["support.function"],
       "settings": {
-        "foreground": "#059669"
+        "foreground": "#047857"
       }
     },
     {
@@ -842,7 +842,7 @@
     {
       "scope": ["entity.name.class", "entity.name.type.class"],
       "settings": {
-        "foreground": "#d97706",
+        "foreground": "#c2410c",
         "fontStyle": "bold"
       }
     },
@@ -862,7 +862,7 @@
     {
       "scope": ["entity.other.attribute-name"],
       "settings": {
-        "foreground": "#d97706"
+        "foreground": "#c2410c"
       }
     },
     {
@@ -951,14 +951,14 @@
     {
       "scope": ["markup.bold"],
       "settings": {
-        "foreground": "#d97706",
+        "foreground": "#c2410c",
         "fontStyle": "bold"
       }
     },
     {
       "scope": ["markup.changed"],
       "settings": {
-        "foreground": "#d97706"
+        "foreground": "#c2410c"
       }
     },
     {
@@ -998,21 +998,21 @@
     {
       "scope": ["markup.inserted"],
       "settings": {
-        "foreground": "#059669",
+        "foreground": "#047857",
         "fontStyle": "bold"
       }
     },
     {
       "scope": ["markup.quote"],
       "settings": {
-        "foreground": "#7c7c7c",
+        "foreground": "#6b7280",
         "fontStyle": "italic"
       }
     },
     {
       "scope": ["markup.raw"],
       "settings": {
-        "foreground": "#059669"
+        "foreground": "#047857"
       }
     },
     {
