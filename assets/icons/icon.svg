@@ -1,0 +1,15 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Simple A without background -->
+  <path d="M 40 105 L 55 35 L 73 35 L 88 105" 
+        stroke="#1a1a1a" 
+        stroke-width="8" 
+        fill="none" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- Crossbar - highlighted for accessibility -->
+  <line x1="50" y1="75" x2="78" y2="75" 
+        stroke="#dc2626" 
+        stroke-width="6" 
+        stroke-linecap="round"/>
+</svg>

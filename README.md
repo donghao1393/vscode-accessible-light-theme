@@ -1,137 +1,141 @@
-# Accessible Light Theme for VS Code
+# Clean Light Theme for VS Code
 
-A light theme designed for **everyone** - including color-blind developers, screen reader users, and anyone who needs high contrast coding.
+*Finally, a light theme that doesn't hurt your eyes.*
 
-## 🎯 Live Preview
+## 🎯 Why This Theme?
 
-[🌐 View Interactive Preview](./preview.html) | [📱 GitHub Preview](https://htmlpreview.github.io/?https://github.com/donghao1393/vscode-accessible-light-theme/blob/master/preview.html)
+**Tired of ugly VS Code themes?** So was I. Most light themes are either:
+- Too cluttered and distracting
+- Have terrible color choices  
+- Hard to read during long coding sessions
+- Look awful when presenting code
 
-## 🎯 What Makes This Special?
+This theme is different: **clean, simple, and actually pleasant to look at.**
 
-**Real accessibility, not just claims:**
-- ✅ All colors tested to meet WCAG AA standards (4.5:1 contrast)
-- ✅ Works great for red-green color blindness (most common type)
-- ✅ Font styles (bold, italic) help distinguish code elements beyond just color
-- ✅ Perfect for projectors and bright rooms
-- ✅ Screen reader friendly with consistent color hierarchy
+## 🌟 Live Preview
 
-## 🎨 Color Palette
+[🌐 View Interactive Preview](./assets/preview/preview.html) | [📱 GitHub Preview](https://htmlpreview.github.io/?https://github.com/donghao1393/vscode-accessible-light-theme/blob/master/assets/preview/preview.html)
 
-| Color | Hex Code | Contrast | Used For |
-|-------|----------|----------|----------|
-| 🔴 Red | `#dc2626` | 4.75:1 | Keywords (`function`, `if`, `class`) |
-| 🟢 Green | `#047857` | 5.39:1 | Strings (`"hello world"`) |
-| 🟠 Orange | `#c2410c` | 5.09:1 | Numbers (`42`, `3.14`) and types |
-| 🔵 Blue | `#2563eb` | 5.08:1 | Function names (`myFunction()`) |
-| ⚫ Gray | `#6b7280` | 4.75:1 | Comments (`// like this`) |
+See exactly how your code will look before installing!
 
-## 🚀 How to Install and Use
+## ✨ What Makes It Special?
 
-### Step 1: Install the Theme
-**Option A: From VS Code Marketplace**
+### 🎨 **Clean Design**
+- No visual noise or distracting colors
+- Each color has a clear purpose
+- Consistent and predictable highlighting
+
+### 👁️ **Easy on Your Eyes**
+- High contrast ratios (your eyes will thank you)
+- Perfect for long coding sessions
+- Works great in bright rooms and on projectors
+
+### 🎯 **Smart Color Choices**
+| What | Color | Why |
+|------|-------|-----|
+| Keywords (`function`, `if`) | 🔴 Red | Important syntax stands out |
+| Strings (`"hello"`) | 🟢 Green | Easy to spot text content |
+| Numbers (`42`, `3.14`) | 🟠 Orange | Data values are clear |
+| Functions (`myFunction()`) | 🔵 Blue | Method calls are obvious |
+| Comments (`// notes`) | ⚫ Gray | Subtle, won't distract |
+
+## 🚀 How to Use It
+
+### Step 1: Download
+1. Go to [Releases](https://github.com/donghao1393/vscode-accessible-light-theme/releases)
+2. Download the latest `.vsix` file
+
+### Step 2: Install
 1. Open VS Code
-2. Click the Extensions icon (or press `Ctrl+Shift+X`)
-3. Search for "Accessible Light Theme"
-4. Click "Install"
+2. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
+3. Type "Extensions: Install from VSIX"
+4. Select the downloaded `.vsix` file
 
-**Option B: From Downloaded File**
-1. Download the `.vsix` file
-2. Open VS Code
-3. Press `Ctrl+Shift+P` and type "Extensions: Install from VSIX"
-4. Select the downloaded file
+### Step 3: Activate  
+1. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
+2. Type "Preferences: Color Theme"  
+3. Choose "Accessible Light"
 
-### Step 2: Activate the Theme
-1. Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac)
-2. Type "Preferences: Color Theme"
-3. Select "Accessible Light"
+**That's it!** Your code should now look clean and readable.
 
-### Step 3: Optimize Your Experience (Optional but Recommended)
+## 🔧 Make It Even Better (Optional)
 
-To get the most out of this theme, you can add some settings to VS Code:
+Want to get the most out of this theme? Add these settings to VS Code:
 
-1. **Open VS Code Settings:**
-   - Press `Ctrl+,` (Windows/Linux) or `Cmd+,` (Mac)
-   - Click the "Open Settings (JSON)" icon in the top-right corner
+1. **Open Settings**: Press `Ctrl+,` (or `Cmd+,` on Mac)
+2. **Click the file icon** in the top-right corner (opens settings.json)
+3. **Add these lines**:
 
-2. **Add these settings to your `settings.json` file:**
-   ```json
-   {
-     "editor.bracketPairColorization.enabled": true,
-     "terminal.integrated.minimumContrastRatio": 4.5,
-     "accessibility.signals.lineHasError.sound": "on"
-   }
-   ```
+```json
+{
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.fontLigatures": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [80, 120],
+  "terminal.integrated.minimumContrastRatio": 4.5,
+  "workbench.colorCustomizations": {
+    "[Accessible Light]": {
+      "terminal.background": "#fdfdfd"
+    }
+  }
+}
+```
 
-3. **Save the file** (Ctrl+S or Cmd+S)
+**What do these do?**
+- **Bracket colors**: Matching brackets get the same color (easier to spot)
+- **Bracket guides**: Shows lines connecting matching brackets
+- **Font ligatures**: Makes symbols like `=>` and `!=` look prettier
+- **Show spaces**: Helps you spot extra spaces and indentation
+- **Rulers**: Vertical lines at 80 and 120 characters (coding guidelines)
+- **Terminal contrast**: Ensures terminal text is always readable
+- **Terminal background**: Matches the editor background for consistency
 
-**What do these settings do?**
-- `bracketPairColorization`: Colors matching brackets so you can see code structure better
-- `minimumContrastRatio`: Ensures terminal text is always readable
-- `lineHasError.sound`: Plays a sound when there's an error (helpful for screen readers)
+## 🎯 Perfect For
 
-## 👥 Who This Helps
+### 👨‍💻 **Daily Coding**
+- Clean enough to focus on your code
+- Comfortable for hours of programming
+- Colors help you spot different parts quickly
 
-### 🎨 Color-Blind Developers
-- **Font styles matter**: Keywords are **bold**, strings are *italic*, types are <u>underlined</u>
-- **High contrast**: All colors tested with color-blind simulation
-- **Multiple cues**: Important information never relies on color alone
+### 📽️ **Presentations & Teaching**  
+- High contrast shows up clearly on projectors
+- Students can read code from the back of the room
+- Professional appearance for demos
 
-### 🔊 Screen Reader Users
-- Compatible with NVDA, JAWS, and VoiceOver
-- Consistent color hierarchy for better navigation
-- Optional sound alerts for errors and warnings
+### 👥 **Code Reviews**
+- Easy to spot different syntax elements
+- Reduces eye strain during long review sessions
+- Works well on different monitors and lighting
 
-### 📽️ Teachers and Presenters
-- Optimized for projectors and bright environments
-- Clear visibility from the back of the room
-- High contrast maintains readability on any screen
+## 🤔 Common Questions
 
-## ✅ Quality Guarantee
+### "How is this different from other light themes?"
+Most light themes try to do too much. This one focuses on being **clean and readable**. Every color choice has a purpose.
 
-**All colors meet WCAG AA standards** (4.5:1 contrast ratio minimum):
+### "Will this work with my favorite extensions?"
+Yes! It's designed to work well with popular extensions like GitLens, Prettier, and ESLint.
 
-| Element | Contrast Ratio | Status |
-|---------|----------------|--------|
-| Main text | 17.11:1 | ✅ Excellent |
-| Keywords | 4.75:1 | ✅ Pass |
-| Strings | 5.39:1 | ✅ Pass |
-| Numbers | 5.09:1 | ✅ Pass |
-| Functions | 5.08:1 | ✅ Pass |
-| Comments | 4.75:1 | ✅ Pass |
+### "Can I customize the colors?"
+Absolutely! You can override any color in your VS Code settings. Check the [customization guide](https://code.visualstudio.com/docs/getstarted/themes#_customizing-a-color-theme).
 
-**Want to verify yourself?**
-- Run: `just test` (modern Rust-based task runner)
-- Or: `uv run pytest tests/` (direct pytest command)
+### "Does it work for all programming languages?"
+Yes, it's designed to work with any language VS Code supports - JavaScript, Python, Go, Rust, you name it.
 
-## 🔧 Advanced Customization
+## 🎨 Want to See More?
 
-If you want to adjust colors further, you can override them in your VS Code settings:
+- **Color palette details**: Check out the theme file at `themes/accessible-light-theme.json`
+- **Report issues**: Found something that looks weird? [Let me know](https://github.com/donghao1393/vscode-accessible-light-theme/issues)
+- **Suggest improvements**: Have ideas? Open an issue!
 
-1. Open your `settings.json` file (see Step 3 above)
-2. Add a `workbench.colorCustomizations` section:
-   ```json
-   {
-     "workbench.colorCustomizations": {
-       "[Accessible Light]": {
-         "editor.background": "#ffffff",
-         "editor.foreground": "#000000"
-       }
-     }
-   }
-   ```
+## 📝 The Story
 
-This example makes the background pure white and text pure black for even higher contrast.
+I got tired of switching between ugly VS Code themes. Some were too bright, others too cluttered, most just looked unprofessional. 
 
-## 🤝 Contributing
+So I made this one: **simple, clean, and easy on the eyes**. 
 
-Found an accessibility issue? Have suggestions? 
-- [Open an issue](https://github.com/donghao1393/vscode-accessible-light-theme/issues)
-- [Read our accessibility guide](ACCESSIBILITY.md)
-
-## 📄 License
-
-MIT License - feel free to use and modify!
+If you're also tired of visually noisy themes, this might be exactly what you need.
 
 ---
 
-**Made with ❤️ for accessible coding**
+**Made by a developer who cares about clean code AND clean design** ✨
